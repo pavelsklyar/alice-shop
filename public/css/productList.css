@@ -1,0 +1,208 @@
+.containerPrdList{
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.productList{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/*хлебные крошки*/
+.productList .brdCrumbs li{
+    display: inline-block;
+}
+/*название страницы*/
+.prdH1{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    color: #e47fa9;
+}
+.prdH1 h1{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+/*основной контент*/
+.containerPrdList{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+/*заголовки для фильтров*/
+.filterPrdListH1, .f1PriceH1, .f2SizeH1, .f3ColorH1{
+    color: #e47fa9;
+    margin: 10px 0;
+}
+.filterPrdListH1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*контейнер для фильтров*/
+.filterPrdList{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    flex: 1;
+}
+.f2Size, .f3Color{
+    margin-left: 20px;
+}
+/*выбранные фильтры*/
+.selectedFilters span{
+    font-size: 16px;
+}
+.selectedFilters{
+    margin-bottom: 30px;
+}
+/*контейнер для товаров*/
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*отдельный товар*/
+.product{
+    margin-right: 40px;
+    width: 25%;
+    margin-top: 40px;
+    padding-top: 60px;
+}
+.prdInf img{
+    height: 315px;
+    width: 100%;
+}
+.product :hover{
+    -webkit-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    transform: scale(1.025);
+}
+.prdH5, .prdH4{
+    color: grey;
+    margin: 5px auto;
+    font-size: 1.2em;
+}
+.prdH5:hover, .prdH4:hover{
+    transform: none;
+}
+/*пагинация*/
+.pagination li{
+display: inline-block;
+margin-left: 10px;
+}
+.pagination li a {
+    color: grey;
+}
+.pagination ul{
+    text-align: center;
+    margin: 50px auto;
+}
+.pagination li:hover a {
+    color: black;
+    border-bottom: 2px solid black;
+}
+/*кнопочки*/
+.butAddOrClr, .prdButton{
+    font-family: logo_font;
+    background-color:white;
+    height:40px;
+    width:200px;
+    font-size:25px;
+    border: 2px solid black;
+    color: black;
+    cursor:pointer;
+    margin-top: 20px;
+}
+
+.prdButton{
+    border: 2px solid #e47fa9;
+    color: #e47fa9;
+}
+/*наведение на элементы внутри карточки товара*/
+.prdButton:hover{
+    border: 2px solid black;
+    color: black;
+}
+.prdH5:hover, .prdH4:hover {
+    color: black;
+}
+/*медиа-запросы*/
+@media(max-width: 1275px){ 
+    /*для решения проблемы "назезания" кнопки заказа на кнопку сброча фильтра*/
+    .prdImg {
+        width: 90%;
+    }
+    .prdButton{
+        font-size: 0.8em;
+        width: 70%;
+        margin: 0 30px;
+    }
+    .butAddOrClr{
+        font-size: 0.8em;
+        width: 40%;
+    }
+    .maxPrice, .minPrice{
+        width: 20%;
+    }
+}
+@media(max-width: 1217px){ 
+    /*для решения проблемы некрасивого переноса товара и наезда кнопок*/
+    .containerPrdList{
+        width: 90%;
+        margin-bottom: 60px;
+    }
+    .addOrClear{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .butAddOrClr, .prdButton{
+        width: 100%;
+    }
+}
+@media(max-width: 1073px){ 
+    /*для решения проблемы наезда фильтров на товары*/
+    .filterPrdList {
+        margin-left: 0;
+        font-size: 0.8em;
+    }
+    .filterPrdListH1 {
+        text-align: left;
+    }
+}
+@media(max-width: 986px){ 
+    /*для перехода к мобильной версии*/
+    .products{
+        flex-direction: column;
+    }
+    .prdButton{
+        margin: 0;
+        width: 90%;
+    }
+    .product{
+        margin-left: 40px;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+}
+@media(max-width: 801px){ 
+    .containerPrdList{
+        flex-direction: column;
+    }
+    .filterPrdList {
+        text-align: center;
+        font-size: 1em;
+    }
+    .selectedFilters{
+        margin-top: 40px;
+    }
+    .prdH5{
+        font-size: 1.125em;
+    }
+    .pagination ul{
+        margin-left: -50px;
+    }
+}

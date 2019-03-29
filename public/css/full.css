@@ -1,0 +1,89 @@
+/*хлебные крошки*/
+.productCard .brdCrumbs li{
+    display: inline-block;
+}
+/*название*/
+.prdCardH1 h1{
+    width:95%;
+    text-align: left;
+    margin-left: 5%;
+}
+/*выравнивание основного блока*/
+.mainInfPrdCard{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*кнопки*/
+.number{
+    font-family: logo_font;
+    font-size: 3em;
+    margin: 0 10px;
+}
+.buyButtPrdCrd{
+    font-family: logo_font;
+    background-color:white;
+    height:50px;
+    width:40px;
+    font-size:25px;
+    border: 2px solid black;
+    color: black;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.buyButtPrdCrdMain{
+    font-family: logo_font;
+    background-color:white;
+    height:43px;
+    width:200px;
+    font-size:25px;
+    border: 2px solid black;
+    color: black;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.increase{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    width: 100%;
+}
+.mainButtonsPrdCrd{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.buyButtPrdCrdMain:hover{
+    border: 2px solid  #e47fa9;
+    color:  #e47fa9;
+}
+/*выбор цвета*/
+.chngColor input[type="radio"] {
+    border: 2px solid black;
+    color: black;
+    width: 25px;
+    height: 25px;
+    background-size: 20px; 
+    background-color: #e47fa9;
+    margin-right: 10px;
+}
+.chngSize select{
+    font-family: logo_font;
+    background-color:white;
+    height:43px;
+    width:200px;
+    font-size:25px;
+    border: 2px solid black;
+    color: black;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.prdText{
+    font-family: logo_font; 
+    color: #e47fa9;
+    width: 90%;
+    margin: 30px auto 10px;
+}

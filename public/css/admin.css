@@ -1,0 +1,275 @@
+@font-face {
+    font-family: logo_font;
+    src:url(/fonts/Movus.ttf);
+}
+@font-face {
+    font-family: text_font;
+    src:url(/fonts/Bemount.otf);
+}
+@font-face {
+    font-family: Roboto;
+    src:url(/fonts/Roboto.ttf)
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.admin {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Roboto;
+}
+a {
+    text-decoration: none;
+}
+.admin-left {
+    flex: 1;
+    flex-wrap: wrap;
+    background-color: #333333;
+    color: #fff;
+    min-height: 100vh;
+    min-width: 200px;
+    width: 20%;
+    font-family: text_font;
+    
+}
+
+.admin-logo {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-logo-a {
+    display: block;
+    width: 90%;
+}
+
+.a-logo-img {
+    width: 100%;
+    display: block;
+}
+
+.admin-navigation {
+    font-size: 12pt;
+}
+
+.a-nav-ul {
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    width: 100%;
+
+}
+
+.a-nav-li {
+    background-image: url('../images/admin/collapsed.png');
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: right center;
+    padding: 10px;
+    padding-left: 20%;
+    font-size: 40px;
+}
+
+.a-nav-li:hover {
+    background-color: #f2da70;;
+    color: #fff;
+}
+
+.a-nav-a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.a-nav-a:hover {
+    color: #fff;
+}
+
+.admin-right {
+    width: 80%;
+    background-color: #f8f8f8;
+}
+
+.admin-right-top {
+    width: 100%;
+    height: 73px;
+    background-color: #333333;
+    color: #e47fa9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: text_font;
+
+}
+
+.admin-right-content {
+    background-color: #f8f8f8;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.a-products-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.a-products-td {
+    padding: 7px 10px;
+    border: 1px solid black;
+}
+
+.addblock {
+    margin: 0px 10px 15px;
+}
+
+
+.addform {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px 10px;
+    justify-content: space-between;
+}
+
+.addselect {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 2px;
+}
+
+.addinput {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 2px 5px;
+}
+
+.addtext {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 2px 5px;
+}
+
+.addsubmit {
+    background-color: #333333;
+    border: none;
+}
+
+.addsubmit:hover {
+    background-color: #222222;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*////////////////////////////////*/
+.logo{
+    font-family: logo_font;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 73px;
+
+}
+.al{
+    letter-spacing:16px;
+    color:#ffffff;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.logo a {
+    width: 100%;
+}
+.logo span{
+    font-size:16px;
+    color:#ffffff;
+    padding-bottom: 10px;
+
+
+}
+
+textarea, input {
+    resize: none; /* Запрещаем изменять размер */
+    border: 2px solid #c1c6cc;
+    width: 50%;
+}
+
+.btn {
+    width: 50%;
+    height: 73px;
+    border: 2px solid #c1c6cc;
+}
+
+.file-upload {
+    margin-right: 1%;
+    position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
+    overflow: hidden; /* Все что выходит за пределы - скрываем */
+    width: 48%; /* Задаем ширину кнопки выбора файла */
+    height: 69px; /* Задаем высоту кнопки выбора файла */
+    background: #f2da70;;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #c1c6cc;
+    }
+    .file-upload:hover {
+    background: #e47fa9;
+    }
+    .file-upload input[type="file"]{
+    display: none; /* Обязательно скрываем настоящий Input File */
+    }
+    .file-upload label {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    }
+.addProd {
+    max-width: 250px; /* Задаем ширину кнопки выбора файла */
+    height: 30px; /* Задаем высоту кнопки выбора файла */
+    background: #333333;;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #c1c6cc;
+    margin-bottom: 1%;
+    }
+    .addProd label {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        cursor: pointer;
+        }
+.addProd:hover {
+    background: #c1c6cc;;
+    border: 2px solid #333333;
+}
+.addProd a {
+    padding: 5px;
+    color: #c1c6cc;
+    width: 100%;
+    text-decoration: none;
+}
+.addProd a:hover {
+    color: #333333;
+}
